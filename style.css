@@ -1,0 +1,40 @@
+/* Hero Section Styles */
+.hero-section {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.stats-section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.stats-box {
+  background-color: #ffc107;
+  border-radius: 30px;
+  padding: 80px 40px;
+  min-height: 400px;
+}
+
+.stat-item {
+  text-align: center;
+  color: white;
+}
+
+.stat-item h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Position the girl image to overlap like in the image */
+.stats-box img {
+  left: -50px !important;
+}
