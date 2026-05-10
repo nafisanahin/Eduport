@@ -1,20 +1,55 @@
+
 /* Hero Section Styles */
 .hero-section {
   min-height: 600px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Background Image */
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+/* Overlay */
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+.opacity-6 {
+  opacity: 0.6 !important;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .stats-section {
-  padding: 100px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
 .stats-box {
   background-color: #ffc107;
-  border-radius: 30px;
-  padding: 80px 40px;
-  min-height: 400px;
+  border-radius: 10px;
+  padding: 40px 0px;
+
 }
 
 .stat-item {
@@ -36,5 +71,10 @@
 
 /* Position the girl image to overlap like in the image */
 .stats-box img {
-  left: -50px !important;
+  left: 50px !important;
 }
+
+.section3 {
+  padding: 3rem 0; 
+}
+
